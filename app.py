@@ -19,7 +19,7 @@ def main():
 
     # Calculate CGPA
     total_credits = sum(credits)
-    grade_points = {"S":10.0, A": 9.0, "B": 8.0, "C": 7.0, "D": 6.0, "E": 4.0}
+    grade_points = {"S":10.0, "A": 9.0, "B": 8.0, "C": 7.0, "D": 6.0, "E": 4.0}
     weighted_sum = sum(grade_points[grade] * credit for grade, credit in zip(grades, credits))
     cgpa = weighted_sum / total_credits
 
